@@ -23,7 +23,7 @@
   &kp TAB  &kp Q  &kp C     &kp H  &kp M      &kp Z        &kp K  &kp Y      &kp O    &kp J   &kp SQT       &kp BSPC
 &kp LCTRL  &kp R  &kp S     &kp N  &kp T      &kp G        &kp W  &kp U      &kp E    &kp I     &kp A       &kp SEMI
 &sk LSHFT  &kp X  &kp B     &kp L  &kp D      &kp P        &kp V  &kp F  &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                         &kp LGUI  &mo 1  &kp ENTER    &kp SPACE  &mo 2   &kp RALT
+                         &kp LGUI  &mo 2  &kp ENTER    &kp SPACE  &mo 1   &kp RALT
             >;
         };
 
@@ -35,10 +35,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans     &trans     &trans     &trans     &trans  &trans        &kp LS(LA(LC(LEFT)))      &kp LS(LA(LC(DOWN)))      &kp LS(LA(LC(UP)))      &kp LS(LA(LC(RIGHT)))  &trans  &trans
-&trans     &trans     &trans     &trans     &trans  &trans                    &kp LEFT                  &kp DOWN                  &kp UP                  &kp RIGHT  &trans  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &trans    &kp LS(LA(LG(LC(LEFT))))  &kp LS(LA(LG(LC(DOWN))))  &kp LS(LA(LG(LC(UP))))  &kp LS(LA(LG(LC(RIGHT))))  &trans  &trans
-                                 &trans     &trans  &trans                      &trans                    &trans                  &trans
+&trans  &kp TILDE          &kp GRAVE           &trans                 &trans  &trans      &trans    &trans  &trans     &trans  &trans  &trans
+&trans     &trans   &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&trans     &trans  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &trans      &trans    &trans  &trans     &trans  &trans  &trans
+                                               &trans                 &trans  &trans      &trans    &trans  &trans
             >;
         };
 
@@ -50,10 +50,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp AT_SIGN  &kp DLLR  &kp PRCNT  &kp CARET     &kp TILDE    &kp LA(NUMBER_3)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp GRAVE         &trans
-&trans        &kp EQUAL  &kp LBKT   &kp LBRC   &kp LPAR  &kp ASTERISK      &kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &kp AMPERSAND
-&trans  &kp EXCLAMATION  &kp RBKT   &kp RBRC   &kp RPAR      &kp HASH           &kp MINUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9      &kp PLUS         &trans
-                                      &trans     &trans     &kp SPACE           &kp ENTER        &trans        &trans
+&trans   &kp HASH         &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPERSAND    &kp LA(NUMBER_3)  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3        &trans  &trans
+&trans  &kp EQUAL  &kp EXCLAMATION  &kp MINUS  &kp UNDERSCORE       &kp HASH        &kp ASTERISK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &trans
+&trans  &kp LG(Z)        &kp LG(X)  &kp LG(C)       &kp LG(V)    &kp AT_SIGN            &kp PLUS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9        &trans  &trans
+                                       &trans          &trans         &trans              &trans        &trans        &trans
             >;
         };
 
