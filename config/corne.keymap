@@ -14,7 +14,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LONG HOLD TAP HOLD PREFERRED";
             #binding-cells = <2>;
-            tapping_term_ms = <10000>;
+            tapping_term_ms = <1000>;
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
