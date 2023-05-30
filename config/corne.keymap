@@ -10,7 +10,7 @@
 
 &ht_hp {
     tapping-term-ms = <10000>;
-}
+};
 
 / {
     conditional_layers {
