@@ -18,6 +18,46 @@
             flavor = "hold-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        left_arrow_morph: left_arrow_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LEFT_ARROW_MORPH";
+            bindings = <&kp W>, <&kp LEFT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        down_arrow_morph: down_arrow_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DOWN_ARROW_MORPH";
+            bindings = <&kp U>, <&kp DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        up_arrow_morph: up_arrow_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "UP_ARROW_MORPH";
+            bindings = <&kp E>, <&kp UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
+
+        right_arrow_morph: right_arrow_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "RIGHT_ARROW_MORPH";
+            bindings = <&kp I>, <&kp RIGHT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_RALT)>;
+        };
     };
 
     conditional_layers {
@@ -40,10 +80,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB            &kp Q  &kp C  &kp H     &kp M  &kp Z        &kp K      &kp Y  &kp O      &kp J    &kp SQT   &kp BSPC
-&lht_hp LCTRL ESC  &kp R  &kp S  &kp N     &kp T  &kp G        &kp W      &kp U  &kp E      &kp I    &kp A     &kp SEMI
-&kp LSHIFT         &kp X  &kp B  &kp L     &kp D  &kp P        &kp V      &kp F  &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                                 &kp LGUI  &mo 2  &kp ENTER    &kp SPACE  &mo 1  &kp RALT
+&kp TAB            &kp Q  &kp C  &kp H     &kp M  &kp Z        &kp K              &kp Y              &kp O            &kp J               &kp SQT   &kp BSPC
+&lht_hp LCTRL ESC  &kp R  &kp S  &kp N     &kp T  &kp G        &left_arrow_morph  &down_arrow_morph  &up_arrow_morph  &right_arrow_morph  &kp A     &kp SEMI
+&kp LSHIFT         &kp X  &kp B  &kp L     &kp D  &kp P        &kp V              &kp F              &kp COMMA        &kp DOT             &kp FSLH  &kp BACKSLASH
+                                 &kp LGUI  &mo 2  &kp ENTER    &kp SPACE          &mo 1              &kp RALT
             >;
         };
 
