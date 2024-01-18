@@ -58,6 +58,16 @@
             mods = <(MOD_RALT)>;
             keep-mods = <(MOD_RALT|MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RGUI)>;
         };
+
+        backspace_mod_morph: backspace_mod_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_MOD_MORPH";
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RCTL|MOD_RSFT|MOD_RALT|MOD_RGUI)>;
+        };
     };
 
     conditional_layers {
@@ -80,7 +90,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB            &kp Q  &kp C  &kp H     &kp M  &kp Z        &kp K              &kp Y              &kp O            &kp J               &kp SQT   &kp BSPC
+&kp TAB            &kp Q  &kp C  &kp H     &kp M  &kp Z        &kp K              &kp Y              &kp O            &kp J               &kp SQT   &backspace_mod_morph
 &lht_hp LCTRL ESC  &kp R  &kp S  &kp N     &kp T  &kp G        &left_arrow_morph  &down_arrow_morph  &up_arrow_morph  &right_arrow_morph  &kp A     &kp SEMI
 &kp LSHIFT         &kp X  &kp B  &kp L     &kp D  &kp P        &kp V              &kp F              &kp COMMA        &kp DOT             &kp FSLH  &kp BACKSLASH
                                  &kp LGUI  &mo 2  &kp ENTER    &kp SPACE          &mo 1              &kp RALT
